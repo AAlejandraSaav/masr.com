@@ -11,7 +11,7 @@
       color: #f2f2f2;
     }
     header {
-      padding: 40px;
+      padding: 60px 20px;
       text-align: center;
       background: linear-gradient(135deg, #1f1f1f, #2b2b2b);
     }
@@ -20,15 +20,19 @@
       margin: 0;
       letter-spacing: 2px;
     }
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
     p {
       font-size: 18px;
-      max-width: 700px;
-      margin: 20px auto;
+      max-width: 800px;
+      margin: 10px auto;
       line-height: 1.6;
     }
     .cta {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 25px;
       padding: 14px 28px;
       background: #ff6a00;
       color: #000;
@@ -40,30 +44,80 @@
       padding: 60px 20px;
       text-align: center;
     }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .card {
+      background: #1c1c1c;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .buy {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background: #00ffcc;
+      color: #000;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>MASR MECATRÓNICA</h1>
-  <p>Diseño, impresión 3D, domótica y soluciones mecatrónicas para el hogar, la oficina y la industria.</p>
-  <a class="cta" href="#productos">Ver productos</a>
+  <p>Ingeniería creativa · Impresión 3D · Objetos funcionales y geek</p>
+  <a class="cta" href="#productos">Explorar productos</a>
 </header>
 
 <section id="productos">
-  <h2>¿Qué hacemos?</h2>
-  <p>
-    Creamos objetos funcionales y personalizados mediante fabricación aditiva.
-    Desde llaveros, lámparas y decoración, hasta soluciones técnicas, gadgets,
-    prototipos funcionales y automatización con electrónica y domótica.
-  </p>
+  <h2>Productos destacados</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x300?text=Llavero+Geek">
+      <h3>Llavero Geek</h3>
+      <p>Impresión 3D personalizada. Ideal para fans.</p>
+      <a class="buy" href="https://wa.me/573136347991?text=Hola%20quiero%20comprar%20el%20Llavero%20Geek">Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x300?text=Lámpara+3D">
+      <h3>Lámpara 3D</h3>
+      <p>Diseños únicos como Luna, Harry Potter y más.</p>
+      <a class="buy" href="https://wa.me/573136347991?text=Hola%20quiero%20comprar%20una%20Lámpara%203D">Comprar</a>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/300x300?text=Soporte+Teléfono">
+      <h3>Soporte para Teléfono</h3>
+      <p>Compacto, resistente y funcional.</p>
+      <a class="buy" href="https://wa.me/573136347991?text=Hola%20quiero%20el%20Soporte%20para%20Teléfono">Comprar</a>
+    </div>
+
+  </div>
 </section>
 
 <section>
-  <h2>MASR es</h2>
+  <h2>¿Qué es MASR?</h2>
   <p>
-    Minimalista. Geek. Industrial. Creativo.  
-    Ingeniería que se ve, se toca y se vive.
+    MASR Mecatrónica es creatividad convertida en objeto.
+    Diseñamos y fabricamos piezas útiles, geek y técnicas usando impresión 3D,
+    electrónica y pensamiento ingenieril.
   </p>
 </section>
 
